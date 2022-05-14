@@ -1,0 +1,12 @@
+[package]
+name = "esp-leveled-edge"
+version = "0.1.0"
+edition = "2021"
+description = "AnyEdge interrupt workaround for esp using level interrupts and debouncers"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+esp-idf-sys = { version = "0.31.5", features = ["binstart"] }
+esp-idf-hal = "0.37"
+embedded-hal = "0.2.7"
